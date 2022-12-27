@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_in_lobbi_user">
+
+    <TextView
+        android:id="@+id/tw_id_lobbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Привет"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMenuButton"
+            android:text="Поиск" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn_track_list2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMenuButton"
+            android:text="Очередь" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn_users_list2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMenuButton"
+            android:text="Люди в комнате" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_for_fragments2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
